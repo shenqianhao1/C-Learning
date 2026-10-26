@@ -1,0 +1,38 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "C: Build active file (MSVC)",
+            "type": "shell",
+            "command": "call \"D:\\visual studio\\Community\\Common7\\Tools\\VsDevCmd.bat\" -no_logo -arch=x64 >nul && cl.exe /nologo /TC /std:c17 /W4 /Zi /Od /utf-8 /D_CRT_SECURE_NO_WARNINGS \"${file}\" /Fe:\"${fileDirname}\\${fileBasenameNoExtension}.exe\" /Fo:\"${fileDirname}\\${fileBasenameNoExtension}.obj\" /Fd:\"${fileDirname}\\${fileBasenameNoExtension}.pdb\"",
+            "options": {
+                "cwd": "${fileDirname}",
+                "shell": {
+                    "executable": "C:\\Windows\\System32\\cmd.exe",
+                    "args": ["/d", "/c"]
+                }
+            },
+            "problemMatcher": ["$msCompile"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "C: Run active file",
+            "type": "process",
+            "command": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "dependsOn": "C: Build active file (MSVC)",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "focus": true,
+                "panel": "dedicated",
+                "clear": true
+            }
+        }
+    ]
+}

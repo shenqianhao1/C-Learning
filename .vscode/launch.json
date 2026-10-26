@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C: Debug active file (MSVC)",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "cwd": "${fileDirname}",
+            "args": [],
+            "stopAtEntry": false,
+            "externalConsole": false,
+            "preLaunchTask": "C: Build active file (MSVC)"
+        }
+    ]
+}
