@@ -13,6 +13,7 @@ int main()
 {
     int a,b,n;
     scanf("%d",&n);
+    printf("n=%d时的直角梯形：\n",n);
     for(a=1;a<=n;a++)
     {
         for(b=0;b<=n-a-1;b++)
@@ -27,6 +28,4 @@ int main()
         }
        
      return 0;
-    }
-    
-        
+  }
