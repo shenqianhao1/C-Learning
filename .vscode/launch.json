@@ -9,7 +9,7 @@
             "cwd": "${fileDirname}",
             "args": [],
             "stopAtEntry": false,
-            "externalConsole": false,
+      "externalConsole": true,
             "preLaunchTask": "C: Build active file (MSVC)"
         }
     ]
