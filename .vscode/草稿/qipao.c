@@ -11,6 +11,7 @@ int main()
     printf("\n");
    }
     for(j=0;j<=9;j++)
+    if(a[n]>a[n+1])
       
     
 }
