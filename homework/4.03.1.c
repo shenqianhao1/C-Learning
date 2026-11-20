@@ -10,7 +10,7 @@ int main()
 		int j;
 		for (j = 0;j < 3;j++)
 		{
-			scanf_s("%d", &m[i][j]);
+			scanf("%d", &m[i][j]);
 			a[c] = m[i][j];
 			c++;
 		}
@@ -36,3 +36,5 @@ int main()
 			if ((b + 1) % 3 == 0)
 				printf("\n");
 		}
+		return 0;
+	}
