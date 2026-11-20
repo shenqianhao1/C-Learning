@@ -10,7 +10,7 @@ int main()
         scanf_s("%d",&a[i][j]);
     }
 }        
-        int sum;
+        int sum=0;
       for(int b=0;b<5;b++)
       {
         for(int c=0;c<5;c++)
@@ -19,13 +19,13 @@ int main()
             sum=sum+a[b][c];
         }
     }
-    int s=0;
+    int s=1;
     for(int d=0;d<5;d++)
       {
         for (int f=0;f<5;f++)
         {
-            if((d==f)||(d+f==4))&&(d%2==0))&(f%2==0)
-            s=a[d][f];
+           if((d==f||d+f==4)&&d%2==0&&f%2==0)
+           s=s*a[d][f]; 
         }
 
       }
