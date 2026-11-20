@@ -10,7 +10,7 @@ int main()
 		int j;
 		for (j = 0;j < 3;j++)
 		{
-			scanf_s("%d", &m[i][j]);
+			scanf("%d", &m[i][j]);
 			a[c] = m[i][j];
 			c++;
 		}
@@ -21,13 +21,13 @@ int main()
 		{
 			int k;
 			int n;
-			n = m + 1;
-			for (;n < 9;n++)
-				if (a[n] < a[m])
+			n = 0;
+			for (;n < 8-m;n++)
+				if (a[n] < a[n+1])
 				{
-					k = a[m];
-					a[m] = a[n];
-					a[n] = k;
+					k = a[n];
+					a[n] = a[n+1];
+					a[n+1] = k;
 				}
 		}
 		for (int b = 0;b < 9;b++)
@@ -36,3 +36,5 @@ int main()
 			if ((b + 1) % 3 == 0)
 				printf("\n");
 		}
+		return 0;
+	}
