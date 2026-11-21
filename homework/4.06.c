@@ -14,8 +14,8 @@ int main()
        {
         for(int j=0;j<n;j++)
         {
-            c[m][n]=a[m][n]+b[m][n];
-            printf("%d ",c[m][n]);
+            c[i][j]=a[i][j]+b[i][j];
+            printf("%d ",c[i][j]);
 
         }
         printf("\n");
