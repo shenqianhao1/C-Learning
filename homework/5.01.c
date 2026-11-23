@@ -6,7 +6,7 @@ int main()
     int equal();
     int small();
     double a,b,c;
-    scaanf("lf,lf,lf",&a,&b,&c);
+    scanf("%lf,%lf,%lf",&a,&b,&c);
     if(b*b-4*a*c>0)
      big(a,b,c);
      else if(b*b-4*a*c==0)
@@ -39,10 +39,10 @@ int equal(double x,double y,double z)
   }
   int small(double x,double y, double z)
   {
-    d=sqrt(-(y*y-4*x*z));
-    x1=((-y)+d)/(2*x);
-    x2=((-y)-d)/(2*x);
-    printf("x1=%fi,x2=%fi",x1,x2);
+    d=sqrt(-(y*y-4*x*z))/(2*x);
+    x1=((-y))/(2*x);
+    x2=((-y))/(2*x);
+    printf("x1=%f+%fi,x2=%f-%fi",x1,d,x2,d);
     return 0;
 
   }
