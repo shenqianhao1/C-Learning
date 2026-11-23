@@ -42,7 +42,7 @@ int equal(double x,double y,double z)
     d=sqrt(-(y*y-4*x*z))/(2*x);
     x1=((-y))/(2*x);
     x2=((-y))/(2*x);
-    printf("x1=%f+%fi,x2=%f-%fi",x1,d,x2,d);
+    printf("x1=%f+(%f)i,x2=%f-(%f)i",x1,d,x2,d);
     return 0;
 
   }
