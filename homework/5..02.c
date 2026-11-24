@@ -4,7 +4,7 @@
 int main()
 {
     int a[3][3];
-    int change();
+    int change(int a[][3]);
     for(int i=0;i<3;i++)
     {
         for(int j=0;j<3;j++)
@@ -13,9 +13,16 @@ int main()
         }
     }
 
-
-
-  change(a);
+    change(a);
+    printf("转置后的矩阵\n");
+for (int i = 0; i < 3; i++)
+{
+    for (int j = 0; j < 3; j++)
+    {
+        printf("%d ", a[i][j]);
+    }
+    printf("\n");
+}
     return 0;
 }
    int change(int a[][3])
