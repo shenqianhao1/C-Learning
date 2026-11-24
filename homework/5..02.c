@@ -2,11 +2,22 @@
 
 int main()
 {
-    int a[n]
+    int a[3][3];
     int change();
+    for(int i=0;i<3;i++)
+    {
+        for(int j=0;j<3;j++)
+        {
+            scanf_s("%d",&a[i][j]);
+        }
+    }
+
+
+
+      change(a);
     return 0;
 }
-int change()
+   int change();
 {
     for(int i=0;i<3;i++)
     {
