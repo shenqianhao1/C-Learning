@@ -1,5 +1,6 @@
 #include<stdio.h>
 
+
 int main()
 {
     int a[3][3];
@@ -14,20 +15,21 @@ int main()
 
 
 
-      change(a);
+  change(a);
     return 0;
 }
-   int change();
-{
+   int change(int a[][3])
+   {
     for(int i=0;i<3;i++)
     {
-        for(int j=0;j<3;j++)
+        for(int j=i+1;j<3;j++)
         {
             int t;
             t=a[i][j];
             a[i][j]=a[j][i];
             a[j][i]=t;
-            return 0;
+            
          }
     }
+    return 0;
 }
