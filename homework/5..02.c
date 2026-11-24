@@ -15,9 +15,8 @@ int change()
             int t;
             t=a[i][j];
             a[i][j]=a[j][i];
-            a[j][i]=t
-
-
-        }
+            a[j][i]=t;
+            return 0;
+         }
     }
 }
