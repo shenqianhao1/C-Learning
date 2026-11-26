@@ -3,11 +3,14 @@
 int main()
 {   
     double n,x;
-    double p(double n,double x);
+    double c;
+    double p(int n,double x);
     printf("请输入n,x");
     scanf_s("%d,%d",&n,&x);
-     p(n,x);
-     return 0
+     c=p(n,x);
+     printf("%d",c);
+
+     return 0;
 }
 
 double p(int n, double x)
