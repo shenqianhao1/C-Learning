@@ -6,7 +6,7 @@ int main()
     double m,n,c;
     scanf_s("%lf,%lf",&m,&n);
     c=ack(m,n);
-    printf("%d",c);
+    printf("%lf",c);
     return 0;
 
 
@@ -14,21 +14,20 @@ int main()
 
 double ack(double m,double n)
 {
-    int c;
+    
     if(m==0)
     {
-    c=n+1;
-    return c;
+    
+    return n+1;
     }
      if(n==0)
      {
-    c=ack(m,n-1);
-    return ack(m,n-1);
+    
+    return ack(m-1,1);
      }
     else
     {
-    c=ack(m-1,ack(m,n-1));
-    return ack(m,n);
+    return ack(m-1,ack(m,n-1));
     }
 
 
